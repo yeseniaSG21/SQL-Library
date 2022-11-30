@@ -1,28 +1,16 @@
 {
   "name": "sql-library",
-  "version": "1.0.0",
-  "description": "Utilize SQLite to create a more intuitive way to manage a library's collection of books",
-  "main": "app.js",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/yeseniaSG21/SQL-Library.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/yeseniaSG21/SQL-Library/issues"
-  },
-  "homepage": "https://github.com/yeseniaSG21/SQL-Library#readme",
   "dependencies": {
-    "express": "^4.18.2",
-    "pug": "^3.0.2",
-    "sequelize": "^6.25.8",
-    "sequelize-cli": "^5.5.1",
-    "sqlite3": "^5.1.2"
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.1"
   }
 }
