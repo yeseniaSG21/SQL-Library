@@ -11,12 +11,13 @@ var usersRouter = require('./routes/users');
 var app = express();
 
 //Import Sequelize
-const { Sequelize } = require('sequelize');
+const sequelize = require('./models/index').sequelize;
 
-//Connect to the database and sync the model 
-
-
-
+//Sync the model 
+(async () => {
+    sequelize.sync();
+    .then (() => console.log('Connection to the database successful'));
+})();
 
 //View engine setup
 app.set('views', path.join(__dirname, 'views'));
