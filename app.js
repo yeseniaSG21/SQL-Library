@@ -15,7 +15,7 @@ const sequelize = require('./models/index').sequelize;
 
 //Sync the model 
 (async () => {
-    sequelize.sync();
+    sequelize.sync()
     .then (() => console.log('Connection to the database successful'));
 })();
 
