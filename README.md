@@ -1,7 +1,8 @@
 # SQL-Library
 
 This project focuses on creating an application for a local library to help them manage their collection of books. My application's task is to provide a more intuitive way to manage the library's collection of books. The web application will provide pages to list, add, update, and delete books. 
-* Adjusted provided CSS styling by changing color and adding pictures to "error.pug" and "page-not-found.pug" layout.
+* Adjusted provided CSS styling by changing colors throughout templates and adding pictures to "error.pug" and "page-not-found.pug" layout.
+* Added an image to the right side of layouts to reduce whitespace.
 
 For this project:
 
