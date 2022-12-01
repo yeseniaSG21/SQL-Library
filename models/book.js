@@ -1,9 +1,9 @@
 'use strict';
 
-const { Sequelize } = require("sequelize");
+const Sequelize = require('sequelize');
 
 //Book Model
-module.exports = (sequelize) => {
+module.exports = ( sequelize ) => {
   class Book extends Sequelize.Model {}
   Book.init({
     title: {
@@ -32,8 +32,5 @@ module.exports = (sequelize) => {
     },
   }, {sequelize});
 
-  Book.associate = function(models) {
-    // associations can be defined here
-  };
   return Book;
 };

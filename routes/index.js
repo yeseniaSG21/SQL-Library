@@ -4,7 +4,7 @@ var router = express.Router();
 
 //Import Book Model
 var { Book } = require('../models');
-var book = require('../models/book');
+var book = require('../models/book').default;
 
 /* Handler function to wrap each route. */
 function asyncHandler(cb) {
