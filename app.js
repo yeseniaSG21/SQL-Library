@@ -52,8 +52,8 @@ app.use((error, req, res, next) => {
         res.status(404).render('page-not-found', { error, title: 'Page Not Found!' });
         console.log('404 Error Occured!');
     } else {
-        err.message = err.message || "Uh no! Looks like something went wrong on the server. Return to Homepage.";
-        res.status(err.status || 500).render('error', { error, title: 'Server Error!' });
+        error.message = error.message || "Uh no! Looks like something went wrong on the server. Return to Homepage.";
+        res.status(error.status || 500).render('error', { error, title: 'Server Error!' });
     }
 });
 
