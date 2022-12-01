@@ -55,7 +55,9 @@ router.get('/books/:id', asyncHandler(async (req, res) => {
   if (book) {
     res.render("books/update-book", { book, title: book.title });  
   } else {
-    res.sendStatus(404);
+      const error = new Error("Sadly the book you are searching for is not in the database");
+      error.status = 404;
+      next(error);
   }
 })); 
 

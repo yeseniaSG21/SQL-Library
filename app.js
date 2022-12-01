@@ -42,8 +42,8 @@ app.use(cookieParser());
 app.use('/', indexRouter);
 
 //Catch 404 and forward to error handler
-app.get('*', (req, res, next) => {
-    next(createError(404), "Unfortunately the page you are looking for is not found. Please return to the homepage.");
+app.use(function (req, res, next) {
+    res.status(404).render('page-not-found');
 });
 
 //Error handler
