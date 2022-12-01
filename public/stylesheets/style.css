@@ -1,8 +1,11 @@
 /* Image background */
 .books-img{
-  background-position: right 50%;
-  max-width: 100%;
-  max-height: 100%;
+  float: right;
+  max-width: 40%;
+  max-height: 40%;
+  margin-left: auto;
+  padding: 0;
+  display: block;
 }
 
 body {
@@ -56,12 +59,12 @@ ul {
 }
 
 h2 {
-  border-top: 2px solid #e7e7e7;
+  border-top: 1px;
   padding-top: 20px;
 }
 
 th {
-  border-bottom: 2px solid #D8B493;
+  border-bottom: 1px solid #D8B493;
   text-align: left;
   padding: 5px 20px 5px 10px;
 }
@@ -89,7 +92,7 @@ input {
   padding: 10px;
   font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
   font-size: 14px;
-  border-radius: 2px;
+  border-radius: 1px;
   border-color: #E7E7E7;
   transition: 0.4s;
 }
